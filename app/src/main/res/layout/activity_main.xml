@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/cutomerSV"
+        app:queryHint="Tìm theo mã, thông tin và địa chỉ"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableLayout
+        android:stretchColumns="1,2,3"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:background="#af0e12">
+            <TextView
+                android:text="#"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#fde3e2"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_column="1"/>
+            <TextView
+                android:text="Khách Hàng"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#fde3e2"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_column="1"/>
+            <TextView
+                android:text="Địa Chỉ"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#fde3e2"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_column="1"/>
+        </TableRow>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/customerRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_customer"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+    </TableLayout>
+
+</LinearLayout>

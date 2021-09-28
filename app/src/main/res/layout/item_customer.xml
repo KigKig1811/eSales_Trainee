@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/customer_item"
+    android:stretchColumns="1,2,3"
+    android:orientation="horizontal">
+
+    <TableRow
+        >
+        <TextView
+            android:id="@+id/idTv"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#fde3e2"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_column="1"/>
+        <TextView
+            android:id="@+id/customerTv"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#fde3e2"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_column="1"/>
+        <TextView
+            android:id="@+id/addressTv"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#fde3e2"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_column="1"/>
+    </TableRow>
+
+</TableLayout>
